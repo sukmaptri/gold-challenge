@@ -1,0 +1,19 @@
+tags:
+  - name: Text Processing File
+get:
+  description: The file in CSV format
+parameters:
+  - name: file
+    paramType: body
+    required: true
+    allowMultiple: false
+    in: formData
+    type: file
+    description: Upload your file
+responses:
+    '200':
+      description: Successful response
+    '400':
+      description: Bad Request
+    '500':
+      description: Internal Server Error
